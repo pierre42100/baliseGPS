@@ -1,0 +1,31 @@
+/* make the content take the full height of the page (minus the header) */
+.page {
+	/* NOTE: jqm will set full height dynamically, but with height: 100% it will be faster on fennec, without a visible resize */
+	height: 100%;
+}
+.ui-content {
+	position: absolute;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.flex {
+	flex: 1;
+}
+
+/* Panneau d'informations */
+.info {
+	border: 1px solid black;
+	background-color: rgb(255, 255, 255);
+	z-index: 150;
+	opacity: 1;
+	color: black;
+	position: absolute;
+	left: 52px;
+	padding: 15px;
+	border-radius: 2px;
+}
